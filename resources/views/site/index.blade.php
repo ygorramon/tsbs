@@ -21,10 +21,12 @@
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="{{url('/images/'.$post->photo)}}">
             </div>
-            <div class="card-content">
+            <div class="card-content" style="max-height: 350px;
+    min-height: 350px;
+">
               <span class="card-title"> {{$post->title}}</span>
               
-                {!! substr ($post->description, 0,200) !!}...
+                {!! substr ($post->description, 0, 200) !!}...
 
             </div>
             <div class="card-action">
@@ -45,7 +47,7 @@
         </div>
         </div>
           
-<br>
+
             @endforeach
 	          
         </div>
