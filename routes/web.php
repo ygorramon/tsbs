@@ -27,4 +27,4 @@ Route::middleware('auth')
     Route::resource('/admin/post','Admin\PostController');
 });
 
-Route::get('/links', 'SiteController@postsLinks' );
+//Route::get('/links', 'SiteController@postsLinks' );
