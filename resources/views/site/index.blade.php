@@ -25,8 +25,7 @@
     min-height: 350px;
 ">
               <span class="card-title"> {{$post->title}}</span>
-              
-                {!! substr ($post->description, 0, 200) !!}...
+              {!! substr ($post->description, 0, 200) !!}...
 
             </div>
             <div class="card-action">

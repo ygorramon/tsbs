@@ -25,7 +25,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>
-        <li><a target="__blank" href="https://terapeutadosonodosbebes.com.br/pag_cap_terapeuta?utm_medium=org&utm_source=org-mid-sites&utm_content=leads&utm_campaign=SFTB2">Contrate uma Terapeuta</a></li>
+        <li><a target="__blank" href="https://terapeutadosonodosbebes.com.br/pag_cap_terapeuta?utm_medium=org&utm_source=org-mid-sites&utm_content=leads&utm_campaign=SFTB2">Seja uma Terapeuta</a></li>
 
       </ul>
 

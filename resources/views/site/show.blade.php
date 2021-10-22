@@ -20,6 +20,7 @@
 
       <!-- End of pre and code tag-->
         </div>  
+        <p style="text-align:right; font-size: 10px;">*Todas as informações dos posts são de inteira responsabilidade da TSB.</p>
        </div>
       </div>
 
@@ -33,7 +34,7 @@
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <p>{!! $post->author->description !!}</p>
+            <p>{!! $post->author->description !!}</p>
             </div>
             <div class="card-action">
             <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round mt-7 z-depth-4" href="{{$post->author->site}}" target="__blank">Contato</a>
