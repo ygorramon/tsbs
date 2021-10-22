@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   
-  <title>Terapeutas do Sono do Bebê</title>
+  <title>Central do Sono</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,7 +21,7 @@
 
 <!-- Navigation bar -->
   <nav class="pink darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="{{route('site.index')}}" class="brand-logo">TSB's</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="{{route('site.index')}}" class="brand-logo">Central do Sono</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>
