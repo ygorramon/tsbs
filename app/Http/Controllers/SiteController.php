@@ -30,4 +30,12 @@ class SiteController extends Controller
       $posts=$this->repository->paginate(2);
       return view ('site.posts', compact('posts'));
   }
+
+  public function postsLinks(){
+    $posts= Post::all();
+    foreach ($posts as $post){
+      echo 'Tema:'.$post->title.' / Terapeuta: '.$post->author->name.' / Link: <a href="'. route('post.site.show', $post->slug).'">'.route('post.site.show', $post->slug).' </a><br><br>';
+    };
+}
+
 }

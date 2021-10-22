@@ -20,8 +20,11 @@ Route::get('/post/{slug}', 'SiteController@show')->name('post.site.show');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::middleware('auth')
         ->group(function () {
     Route::resource('/admin/author','Admin\AuthorController');
     Route::resource('/admin/post','Admin\PostController');
 });
+
+Route::get('/links', 'SiteController@postsLinks' );
