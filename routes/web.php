@@ -10,6 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::domain('josy.tsbs.com.br')->group(function () {
+    Route::get('/', function () {
+        return 'Hello World';
+    });
+});
 
 Route::get('/', 'SiteController@index')->name('site.index');
 Route::get('/posts', 'SiteController@posts')->name('site.posts');
@@ -29,8 +34,3 @@ Route::middleware('auth')
 
 //Route::get('/links', 'SiteController@postsLinks' );
 
-Route::domain('josy.tsbs.com.br')->group(function () {
-    Route::get('/', function () {
-        return 'Hello World';
-    });
-});
