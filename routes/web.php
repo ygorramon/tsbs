@@ -29,7 +29,7 @@ Route::middleware('auth')
 
 //Route::get('/links', 'SiteController@postsLinks' );
 
-Route::domain('{account}.tsbs.com.br')->group(function () {
+Route::domain('josy.tsbs.com.br')->group(function () {
     Route::get('/', function () {
         return 'Hello World';
     });
