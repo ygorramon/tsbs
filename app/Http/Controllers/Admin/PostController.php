@@ -95,7 +95,32 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        if(isset($request->photo)){
+
+        $author=$this->author->find($request->author_id);
+        $imageName = time().'.'.$request->photo->extension();  
+   
+        $request->photo->move(public_path('images'), $imageName);
+        $post= $this->repository->find($id); 
+       $post->update(['title'=>$request->title,
+       'slug'=>Str::slug($request->title),
+        'description'=>$request->description,
+        
+        'photo'=>$imageName,
+        'author_id'=>$request->author_id,
+        ]);
+
+    }else{
+        $post= $this->repository->find($id); 
+       $post->update(['title'=>$request->title,
+       'slug'=>Str::slug($request->title),
+        'description'=>$request->description,
+        
+        
+        'author_id'=>$request->author_id,
+        ]);
+    }
+    return redirect()->route('post.index');
     }
 
     /**

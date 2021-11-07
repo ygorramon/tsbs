@@ -91,6 +91,23 @@ class AuthorController extends Controller
      */
     public function update(Request $request, $id)
     {
+      if(isset($request->photo)){
+       
+      $imageName = time().'.'.$request->photo->extension();  
+   
+      $request->photo->move(public_path('images'), $imageName);
+      $author=$this->repository->find($id);
+    
+        $author->update(['name'=>$request->name,
+      'description'=>$request->description,
+      'site'=>$request->site,
+      'instagram'=>$request->instagram,
+      'whatsapp'=>$request->whatsapp,
+      'facebook'=>$request->facebook,
+      'photo'=>$imageName,
+      'state'=>$request->state,
+      'city'=>$request->city]);
+      }else{
         $author=$this->repository->find($id);
         $author->update(['name'=>$request->name,
       'description'=>$request->description,
@@ -98,9 +115,11 @@ class AuthorController extends Controller
       'instagram'=>$request->instagram,
       'whatsapp'=>$request->whatsapp,
       'facebook'=>$request->facebook,
-      'photo'=>$request->photo,
+      
       'state'=>$request->state,
       'city'=>$request->city]);
+      }
+        return redirect()->route('author.index');
     }
 
     /**
