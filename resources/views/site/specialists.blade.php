@@ -27,7 +27,7 @@
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="{{url('/images/'.$specialist->photo)}}">
             </div>
-            <div class="card-content" style="max-height: 350px;    min-height: 350px;">
+            <div class="card-content" style="max-height: 500px;    min-height: 500px;">
               <span class="card-title"> {{$specialist->name}}</span>
               {!! $specialist->description !!}
 
