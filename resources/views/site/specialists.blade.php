@@ -22,7 +22,7 @@
       <div class="row">
           @foreach ($category->specialists as $specialist)
         
-        <div class="col s12 m4">
+        <div class="col s12 m6">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="{{url('/images/'.$specialist->photo)}}">
