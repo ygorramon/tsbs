@@ -3,15 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Author;
+use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
-    public function __construct(Post $post, Author $author)
+    public function __construct(Post $post, Author $author, Category $category)
     {
         $this->repository = $post;
         $this->author = $author;
+        $this->category= $category;
 
     }
     public function index(){
@@ -36,6 +38,10 @@ class SiteController extends Controller
     foreach ($posts as $post){
       echo 'Tema:'.$post->title.' / Terapeuta: '.$post->author->name.' / Link: <a href="'. route('post.site.show', $post->slug).'">'.route('post.site.show', $post->slug).' </a><br><br>';
     };
+}
+public function especialistas($slug){
+  $category=$this->category->where('slug',$slug)->first();
+ return view ('site.specialists', compact('category'));
 }
 
 }

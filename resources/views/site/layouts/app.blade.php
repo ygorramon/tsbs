@@ -18,22 +18,43 @@
 </head>
 
 <body style="background-color:lightcyan">
-
+<ul id="dropdown1" class="dropdown-content">
+@forelse(App\Models\Category::orderBy('name')->get() as $category)
+                  
+                  <li><a target="__blank" href="{{route('especialista.site.show',$category->slug)}}">{{$category->name}}</a></li>
+                  @empty
+                  @endforelse
+</ul>
 <!-- Navigation bar -->
   <nav class="pink darken-4" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="{{route('site.index')}}" class="brand-logo">Central do Sono</a>
-      <ul class="right hide-on-med-and-down">
+    
+    <ul class="right hide-on-med-and-down">
         <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>
         <li><a target="__blank" href="https://terapeutadosonodosbebes.com.br/pag_vnd_terapeuta?utm_medium=org&utm_source=org-mid-bio-ck&utm_content=sales&utm_campaign=SFTB2">Seja uma Terapeuta</a></li>
-
+        <li><a class="dropdown-trigger" href="#!" data-activates="dropdown1">Especialistas<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
       <li><a href="{{route('site.index')}}">Início</a></li>
-        <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>
-        
+        <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>        
         <li><a target="__blank" href="https://terapeutadosonodosbebes.com.br/pag_vnd_terapeuta?utm_medium=org&utm_source=org-mid-bio-ck&utm_content=sales&utm_campaign=SFTB2">Seja uma Terapeuta</a></li>
+        <li >
+          <ul class="collapsible collapsible-accordion">
+            <li ><a class="collapsible-header waves-effect waves-teal">Especialistas</a>
+              <div class="collapsible-body">
+                <ul>
+                  @forelse(App\Models\Category::orderBy('name')->get() as $category)
+                  
+                  <li><a href="{{route('especialista.site.show',$category->slug)}}" target="__blank">{{$category->name}}</a></li>
+                  @empty
+                  @endforelse
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -72,6 +93,14 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{{asset('js/materialize.js')}}"></script>
   <script src="{{asset('js/init.js')}}"></script>
+  <script>
+  $(document).ready(function() {  
+    $(".dropdown-trigger").dropdown({
+      hover: true,
+      belowOrigin	: true}
+    );    
+  });
+  </script>
 @yield('js')
   </body>
 </html>

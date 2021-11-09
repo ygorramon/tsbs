@@ -5675,7 +5675,7 @@ button.btn-floating {
   cursor: pointer;
   min-height: 3rem;
   line-height: 3rem;
-  padding: 0 1rem;
+  padding: 0 32px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
 }
@@ -5714,7 +5714,7 @@ button.btn-floating {
   border: none;
   line-height: inherit;
   height: inherit;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 
 .side-nav .collapsible-header:hover,

@@ -21,9 +21,7 @@
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="{{url('/images/'.$post->photo)}}">
             </div>
-            <div class="card-content" style="max-height: 350px;
-    min-height: 350px;
-">
+            <div class="card-content" style="max-height: 350px;    min-height: 350px;">
               <span class="card-title"> {{$post->title}}</span>
               {!! substr ($post->description, 0, 200) !!}...
 

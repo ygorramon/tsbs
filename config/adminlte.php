@@ -237,7 +237,14 @@ return [
             'text' => 'Posts',
             'url'  => 'admin/post',
         ],
-      
+        [
+            'text' => 'Categorias',
+            'url'  => 'admin/category',
+        ],
+        [
+            'text' => 'Especialistas',
+            'url'  => 'admin/specialist',
+        ],
     ],
 
     /*

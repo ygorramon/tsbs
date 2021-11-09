@@ -21,6 +21,7 @@ Route::get('/', 'SiteController@index')->name('site.index');
 Route::get('/posts', 'SiteController@posts')->name('site.posts');
 
 Route::get('/post/{slug}', 'SiteController@show')->name('post.site.show');
+Route::get('/especialistas/{slug}', 'SiteController@especialistas')->name('especialista.site.show');
 
 
 Auth::routes();
@@ -31,6 +32,9 @@ Route::middleware('auth')
         ->group(function () {
     Route::resource('/admin/author','Admin\AuthorController');
     Route::resource('/admin/post','Admin\PostController');
+    Route::resource('/admin/category','Admin\CategoryController');
+    Route::resource('/admin/specialist','Admin\SpecialistController');
+
 });
 
 //Route::get('/links', 'SiteController@postsLinks' );
