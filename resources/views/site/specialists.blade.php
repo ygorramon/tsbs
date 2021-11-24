@@ -27,14 +27,15 @@
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="{{url('/images/'.$specialist->photo)}}">
             </div>
-            <div class="card-content" style="max-height: 500px;    min-height: 500px;">
+            <div class="card-content" style="max-height: 600px;    min-height: 600px;">
               <span class="card-title"> {{$specialist->name}}</span>
               {!! $specialist->description !!}
-
+              <br>
+              <b>Cidade:</b>{{$specialist->city}} / {{$specialist->state}}
             </div>
             <div class="card-action">
-            <a class="animate__swing waves-effect waves-light btn " href="{{$specialist->site}}" target="__blank">Contato</a>     
-            </div>
+            <center><a class="animate__swing waves-effect waves-light btn " href="{{$specialist->site}}" target="__blank">Contato</a>     
+            </center></div>
 
            
             

@@ -6,7 +6,11 @@ use App\Models\Author;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use SEOMeta;
+use OpenGraph;
+use Twitter;
 
+use SEO;
 class SiteController extends Controller
 {
     public function __construct(Post $post, Author $author, Category $category)
@@ -17,6 +21,8 @@ class SiteController extends Controller
 
     }
     public function index(){
+        SEO::setTitle('Central do Sono');
+        SEO::setDescription('Dr Odilo');
         $posts=$this->repository->get()->shuffle()->take(6);
        
         return view ('site.index', compact('posts'));
