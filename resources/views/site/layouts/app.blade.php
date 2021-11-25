@@ -31,7 +31,7 @@
     <ul class="right hide-on-med-and-down">
         <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>
-        <li><a target="__blank" href="https://terapeutadosonodosbebes.com.br/pag_vnd_terapeuta?utm_medium=org&utm_source=org-mid-bio-ck&utm_content=sales&utm_campaign=SFTB2">Seja uma Terapeuta</a></li>
+        <li><a target="__blank" href="https://pay.hotmart.com/C62802506H?off=xxtipf5f">Encontre uma Terapeuta</a></li>
         <li><a class="dropdown-trigger" href="#!" data-activates="dropdown1">Especialistas<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
 
