@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
- 
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NBF3WN4');</script>
+<!-- End Google Tag Manager -->
+
  <!-- Meta tags-->
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -17,6 +24,10 @@
 </head>
 
 <body style="background-color:lightcyan">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBF3WN4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <ul id="dropdown1" class="dropdown-content">
 @forelse(App\Models\Category::orderBy('name')->get() as $category)
                   
