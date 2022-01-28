@@ -43,28 +43,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>
         
-        <li><a class="dropdown-trigger" href="#!" data-activates="dropdown1">Especialistas<i class="material-icons right">arrow_drop_down</i></a></li>
+        
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
       <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>        
         
-        <li >
-          <ul class="collapsible collapsible-accordion">
-            <li ><a class="collapsible-header waves-effect waves-teal">Especialistas</a>
-              <div class="collapsible-body">
-                <ul>
-                  @forelse(App\Models\Category::orderBy('name')->get() as $category)
-                  
-                  <li><a href="{{route('especialista.site.show',$category->slug)}}" target="__blank">{{$category->name}}</a></li>
-                  @empty
-                  @endforelse
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
+        
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
