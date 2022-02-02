@@ -42,14 +42,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="right hide-on-med-and-down">
         <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>
-        
+        <li><a href="https://encontre.tsbs.com.br/">Encontre uma Terapeuta</a></li>
+
         
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
       <li><a href="{{route('site.index')}}">Início</a></li>
         <li><a href="{{route('site.posts')}}">Todos os Posts</a></li>        
-        
+        <li><a href="https://encontre.tsbs.com.br/">Encontre uma Terapeuta</a></li>
+
         
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
