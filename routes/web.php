@@ -33,7 +33,7 @@ Route::middleware('auth')
     Route::resource('/admin/author','Admin\AuthorController');
     Route::resource('/admin/post','Admin\PostController');
     Route::resource('/admin/category','Admin\CategoryController');
-    Route::resource('/admin/specialist','Admin\SpecialistController');
+      Route::resource('/admin/specialist','Admin\SpecialistController');
 
 });
 
