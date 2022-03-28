@@ -6,7 +6,7 @@
 <!-- Card Container -->
   <div class="container">
   <div>
-	<img src="{{url('/images/banner.png')}}" border="0" height="100%">
+	<img src="{{url('/images/banner.png')}}" border="0" height="100%" class="responsive-img">
 </div>
   <div class="row container">
     <center>
@@ -15,35 +15,35 @@
   <div class="slider">
     <ul class="slides">
       <li>
-       <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel1.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+       <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel1.jpeg')}}" height="100%" width="100%" class="responsive-img"> <!-- random image -->
         
        </a><div class="caption center-align">
          
         </div>
       </li>
       <li>
-        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel2.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel2.jpeg')}}" height="100%" width="100%" class="responsive-img"> <!-- random image -->
         
        </a><div class="caption center-align">
          
         </div>
       </li>
        <li>
-        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel3.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel3.jpeg')}}" height="100%" width="100%" class="responsive-img"> <!-- random image -->
         
        </a><div class="caption center-align">
          
         </div>
       </li>
        <li>
-        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel4.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel4.jpeg')}}" height="100%" width="100%" class="responsive-img"> <!-- random image -->
         
        </a><div class="caption center-align">
          
         </div>
       </li>
        <li>
-       <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel5.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+       <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel5.jpeg')}}" height="100%" width="100%" class="responsive-img"> <!-- random image -->
         
        </a><div class="caption center-align">
          
