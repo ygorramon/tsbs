@@ -37,7 +37,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </ul>
 <!-- Navigation bar -->
   <nav class="pink darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="{{route('site.index')}}" class="brand-logo">Central do Sono</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="{{route('site.index')}}" class="brand-logo">Instituto SMI 
+Odilo Queiroz</a>
     
     <ul class="right hide-on-med-and-down">
         <li><a href="{{route('site.index')}}">Início</a></li>

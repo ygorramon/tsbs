@@ -6,10 +6,54 @@
 <!-- Card Container -->
   <div class="container">
   <div>
-	<img src="{{url('/images/banner1.png')}}" border="0" class="responsive-image">
+	<img src="{{url('/images/banner.png')}}" border="0" height="100%">
 </div>
-
-
+  <div class="row container">
+    <center>
+    <div class="col s12 m4 l8 offset-l4">
+    
+  <div class="slider">
+    <ul class="slides">
+      <li>
+       <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel1.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        
+       </a><div class="caption center-align">
+         
+        </div>
+      </li>
+      <li>
+        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel2.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        
+       </a><div class="caption center-align">
+         
+        </div>
+      </li>
+       <li>
+        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel3.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        
+       </a><div class="caption center-align">
+         
+        </div>
+      </li>
+       <li>
+        <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel4.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        
+       </a><div class="caption center-align">
+         
+        </div>
+      </li>
+       <li>
+       <a href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank"> <img src="{{url('/images/carrosel5.jpeg')}}" height="100%" width="100%"> <!-- random image -->
+        
+       </a><div class="caption center-align">
+         
+        </div>
+      </li>
+    </ul>
+  </div>
+ </div>
+    </center>
+  </div>
     <div class="section">
 
       <!--   Card elements  -->
@@ -66,5 +110,9 @@
 @endsection
 
 @section('js')
-
+<script>
+  $(document).ready(function(){
+      $('.slider').slider();
+    });
+  </script>
 @endsection
