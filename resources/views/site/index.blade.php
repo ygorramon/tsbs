@@ -11,10 +11,10 @@
     
     
    <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="{{url('/images/1.png')}}" width="600"></a>
-    <a class="carousel-item" href="#two!"><img src="{{url('/images/2.png')}}"></a>
-    <a class="carousel-item" href="#three!"><img src="{{url('/images/3.png')}}"></a>
-    <a class="carousel-item" href="#four!"><img src="{{url('/images/4.png')}}"></a>
+    <a class="carousel-item" href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4"><img src="{{url('/images/1.png')}}" width="600"></a>
+    <a class="carousel-item" href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4"><img src="{{url('/images/2.png')}}"></a>
+    <a class="carousel-item" href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4"><img src="{{url('/images/3.png')}}"></a>
+    <a class="carousel-item" href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4"><img src="{{url('/images/4.png')}}"></a>
   </div>
  
   
