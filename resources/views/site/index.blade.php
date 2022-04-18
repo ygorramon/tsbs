@@ -16,10 +16,14 @@
     <a class="carousel-item" target="__blank" href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4"><img src="{{url('/images/3.png')}}"></a>
     <a class="carousel-item" target="__blank" href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4"><img src="{{url('/images/4.png')}}"></a>
   </div>
- 
+  
   
     <div class="section">
-
+    <div>
+      <center>
+  <a class="animate__swing waves-effect waves-light btn center" href="https://terapeutadosonodosbebes.com.br/pag_ins_enc_terapeuta_org_redir?utm_medium=org&utm_source=org-redir&utm_content=leads&utm_campaign=SFTB4" target="__blank">Saiba Mais</a>            </div>
+</center>  
+</div>
       <!--   Card elements  -->
       <div class="row">
           @foreach ($posts as $key => $post)
